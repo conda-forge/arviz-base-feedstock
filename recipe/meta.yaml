@@ -1,6 +1,6 @@
 {% set name = "arviz-base" %}
-{% set version = "0.8.2" %}
-{% set python_min = "3.11" %}
+{% set version = "1.0.0" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arviz_base-{{ version }}.tar.gz
-  sha256: 4d77142c6396c648fef3624b2d3f76fc9f326b88e513b34eff15ac06489cf840
+  sha256: 6b9796043b4e394056fd8a1ab51c8d4d3e88dcf8f2b698a46b660ff4346c8841
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy >=1.24
+    - numpy >=2
     - xarray >=2024.11.0
     - typing_extensions >=3.10
 
