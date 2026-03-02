@@ -1,6 +1,6 @@
 {% set name = "arviz-base" %}
 {% set version = "1.0.0" %}
-{% set python_min = "3.11" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy >=1.24
+    - numpy >=2
     - xarray >=2024.11.0
     - typing_extensions >=3.10
 
