@@ -25,6 +25,7 @@ requirements:
     - numpy >=2
     - xarray >=2024.11.0
     - typing_extensions >=3.10
+    - lazy_loader
 
 test:
   imports:
