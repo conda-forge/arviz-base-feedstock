@@ -1,5 +1,5 @@
 {% set name = "arviz-base" %}
-{% set version = "1.3.0" %}
+{% set version = "1.3.1" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arviz_base-{{ version }}.tar.gz
-  sha256: 285fe0ac413f515d1962644b471d916327446d58247ae7f331043b1bed5a4d5b
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/arviz_base-{{ version }}.tar.gz
+  sha256: f83c49d1842ca93821d38bc03f1d75df18d56d507694804a07ce6c1b3bbf2d6c
 
 build:
   noarch: python
